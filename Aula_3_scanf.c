@@ -15,7 +15,7 @@ int main(){
     getchar(); // Limpa o buffer do teclado antes de ler a string
     fgets(nome, 50, stdin); // Lê o nome completo do usuário (inclui o caractere de nova linha)
 
-    printf("O seu nome é: %s\n", nome);
+    printf("O seu nome é: %s", nome); // fgets inclui o '\n' na string, então podemos removê-lo se necessário
     printf("A sua idade é: %d anos\n", idade);
     printf("A sua altura é: %.2f m\n", altura);
     
